@@ -30,14 +30,16 @@
 .navigation-link {
   color: var(--mostly-used-color);
   transition: color 250ms var(--time-cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--navigation-link-focus);
+  }
 }
 .blue-studio {
   color: var(--navigation-link-focus);
 }
-.navigation-link:hover,
-.navigation-link:focus {
-  color: var(--navigation-link-focus);
-}
+
 .mail-tel-nav {
   padding: 0px;
   margin-left: 305px;

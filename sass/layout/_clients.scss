@@ -9,21 +9,24 @@
   justify-content: center;
   align-items: center;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--navigation-link-focus);
+  }
 }
-.border-for-logo-clients:hover,
-.border-for-logo-clients:focus {
-  border: 1px solid var(--navigation-link-focus);
-}
+
 .clients-svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-svg-clients {
   fill: var(--img-color);
+  &:hover,
+  &:focus {
+    fill: var(--navigation-link-focus);
+  }
 }
-.link-svg-clients:hover,
-.link-svg-clients:focus {
-  fill: var(--navigation-link-focus);
-}
+
 .svg-list-clients {
   padding: 0px;
   margin: 0px;
