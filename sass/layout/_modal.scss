@@ -173,10 +173,12 @@
     /* outline: 1px solid red; */
     content: "";
     margin-right: 7px;
+
+    .order-form-input-checkbox:focus + & {
+      box-shadow: 0 0 0 2px #2196f3;
+    }
   }
-  .order-form-input-checkbox:focus + &::before {
-    box-shadow: 0 0 0 2px #2196f3;
-  }
+
   .order-form-input-checkbox:checked + &::before {
     border: 2px var(--navigation-link-focus);
     background-color: var(--navigation-link-focus);
