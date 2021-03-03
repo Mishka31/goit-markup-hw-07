@@ -84,12 +84,12 @@
   justify-content: center;
   align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.links-svg:hover,
-.links-svg:focus {
-  background-color: var(--navigation-link-focus);
-}
-.links-svg:hover svg,
-.links-svg:focus svg {
-  fill: var(--claer-white);
+  &:hover svg,
+  &:focus svg {
+    fill: var(--claer-white);
+  }
+  &:hover,
+  &:focus {
+    background-color: var(--navigation-link-focus);
+  }
 }

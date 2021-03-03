@@ -56,6 +56,12 @@
   color: var(--links-header);
   fill: var(--links-header);
   transition: color 250ms var(--time-cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--navigation-link-focus);
+    fill: var(--navigation-link-focus);
+  }
 }
 .phone-link-header {
   font-weight: 500;
@@ -66,17 +72,19 @@
   margin-left: 30px;
   fill: var(--links-header);
   transition: color 250ms var(--time-cubic);
+
+  & {
+    display: flex;
+    align-items: center;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--navigation-link-focus);
+    fill: var(--navigation-link-focus);
+  }
 }
-.phone-link-header:hover,
-.phone-link-header:focus {
-  color: var(--navigation-link-focus);
-  fill: var(--navigation-link-focus);
-}
-.mail-link-header:hover,
-.mail-link-header:focus {
-  color: var(--navigation-link-focus);
-  fill: var(--navigation-link-focus);
-}
+
 .header {
   border-bottom: 1px solid #ececec;
   margin-left: auto;
@@ -90,19 +98,17 @@
   display: flex;
   align-items: center;
 }
-.phone-link-header {
-  display: flex;
-  align-items: center;
-}
-.current::after {
-  position: absolute;
-  left: 0;
-  bottom: 0;
+.current {
+  &:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
 
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: var(--navigation-link-focus);
-  border-radius: 2px;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--navigation-link-focus);
+    border-radius: 2px;
+  }
 }
